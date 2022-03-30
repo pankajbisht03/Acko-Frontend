@@ -199,7 +199,7 @@ export default function Ratings() {
           </div>
           <p className="paraSmallReview">
             95% <br /> 5{" "}
-          </p>
+          
           <div
             className="randomCss"
             style={{
@@ -255,7 +255,7 @@ export default function Ratings() {
               }}
             />
           </div>
-          <p className="paraSmallReview" style={{ marginTop: "-13px" }}>
+          
             Ratings
           </p>
         </div>
