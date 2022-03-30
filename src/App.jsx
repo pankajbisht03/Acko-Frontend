@@ -1,9 +1,15 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import Router from "./Components/Routers/Router";
+import logo from './logo.svg';
+import './App.css';
+import {Header} from "./components/header/Header"
+import {Content} from "./components/content/Content"
 
 function App() {
-  return <Router />;
+  return (
+    <div className="App">
+     <Header />
+     <Content />
+    </div>
+  );
 }
 
 export default App;
