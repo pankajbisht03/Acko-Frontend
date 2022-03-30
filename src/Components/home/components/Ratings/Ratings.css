@@ -70,12 +70,7 @@
     display: none;
   }
   .reviewSmall {
-    font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 100%;
-    display: flex;
-    padding: 40px 0px 10px;
-    border-top: 8px solid rgb(238, 238, 238);
-    margin-bottom: 10px;
+    display: none;
   }
   .reviewBoxesSmall {
     width: 100%;
