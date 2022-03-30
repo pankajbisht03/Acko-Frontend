@@ -1,0 +1,137 @@
+:root {
+  --testCol: white;
+  --baseCol: rgb(124, 71, 225);
+  --bootColor: rgb(214, 217, 224);
+}
+.textOneIN {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 153.1%;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.textTwoIN {
+  margin: 5px 0px 0px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.activeBlockIntro .imgSpanBlock {
+  background-color: white;
+  cursor: auto;
+}
+.logoIn {
+  color: #7d899b;
+  font-size: 25px;
+}
+.BlockIntro .imgSpanBlock {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+.activeBlockIntro .imgSpanBlock {
+  color: rgb(94, 39, 201);
+}
+.btnQuote {
+  border: 1px solid var(--testCol);
+  color: var(--testCol);
+}
+#introMblock {
+  background-color: rgb(94, 39, 201);
+  min-height: 80vh;
+  color: var(--testCol);
+  transition: 0.1s;
+  padding-bottom: 25px;
+}
+.centreCont {
+  max-width: 50%;
+}
+.imgSpanBlock {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 36px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.BlockIntro {
+  border-bottom: 2px solid var(--baseCol);
+}
+.activeBlockIntro {
+  border-bottom: 2px solid var(--bootColor);
+}
+.orBlock {
+  width: 100%;
+  max-width: 81px;
+  height: 0px;
+  border: 1px solid var(--baseCol);
+}
+.sponDevider {
+  height: 32px;
+  border: 1px solid rgb(107, 52, 200);
+  margin: 0px 12px;
+}
+.iplTeams > img {
+  max-width: 5rem;
+}
+.sponsorsBlock {
+  max-width: 520px;
+  margin: 32px auto 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(147, 100, 237);
+  overflow: hidden;
+  background: linear-gradient(
+    rgba(44, 9, 112, 0.7) 0%,
+    rgba(44, 9, 112, 0.12) 57.41%,
+    rgba(255, 61, 103, 0.05) 104.26%
+  );
+}
+.carNumber {
+  border: 1px solid rgb(195, 202, 210);
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 768px) {
+  .sideImgCont {
+    display: none;
+  }
+  #introMblock {
+    background-color: white;
+  }
+  :root {
+    --testCol: rgb(62, 70, 81);
+    --baseCol: rgb(214, 217, 224);
+    --bootColor: rgb(124, 71, 225);
+  }
+  .mainhead {
+    color: rgb(40, 46, 51);
+    letter-spacing: 0.01em;
+    font-weight: 800;
+  }
+  .subhead {
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+    color: rgb(65, 74, 83);
+  }
+  .centreCont {
+    /* width: 100%; */
+    max-width: 100%;
+  }
+  .activeBlockIntro .imgSpanBlock {
+    background-color: rgb(124, 71, 225);
+  }
+  .BlockIntro .imgSpanBlock {
+    color: rgb(94, 39, 201);
+  }
+  .activeBlockIntro .imgSpanBlock {
+    color: white;
+  }
+}

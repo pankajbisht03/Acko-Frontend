@@ -1,0 +1,228 @@
+@media (min-width: 765px) {
+  .firstPartnerPara1,
+  .loginInPartnerPara1,
+  .mpdiv1,
+  .smpdiv1 {
+    display: none;
+  }
+  /*Partner Issued Policy Div*/
+  .partnerIssuedPolicyDiv {
+    font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .firstPartnerPara {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+    color: rgb(40, 46, 51);
+    margin: 60px 0px 10px;
+    text-align: center;
+  }
+
+  .loginInPartnerPara {
+    margin: 0px 0px 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(67, 79, 90);
+  }
+
+  .mpdiv {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 724px;
+    width: 100%;
+  }
+
+  .smpdiv {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0px 16px 28px;
+  }
+
+  .partnerIssuedPolicyButton {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: rgb(53, 177, 113);
+    border: 1px solid rgb(68, 203, 134);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 40px auto 62px;
+    width: 167px;
+  }
+  .mainmain {
+    display: none;
+  }
+
+  .reviewSmall,
+  .reviewBoxesSmall,
+  .paraSmallReview.single5starReview,
+  .stardiv,
+  .divStar {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .mainmain {
+    font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+  }
+  .mainmainmainss {
+    box-sizing: border-box;
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-width: 8px 0px;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .firstPartnerPara,
+  .loginInPartnerPara,
+  .mpdiv,
+  .smpdiv {
+    display: none;
+  }
+  .firstPartnerPara1 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    color: rgb(40, 46, 51);
+    letter-spacing: 0.02em;
+    margin: 0px 0px 7px;
+    text-align: center;
+  }
+  .loginInPartnerPara1 {
+    margin: 0px 0px 25px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: rgb(67, 79, 90);
+    max-width: 255px;
+  }
+  .mpdiv1 {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .smpdiv1 {
+    width: 28px;
+    height: 28px;
+    margin: 0px 7px 13px;
+  }
+  .partnerIssuedPolicyButton {
+    display: none;
+  }
+  .randomCss {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+  .single5starReview {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+  }
+  .stardiv {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .divStar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .picStar {
+    margin: 0px auto 10px;
+  }
+  .paraStar {
+    color: rgb(21, 22, 25);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px auto 15px;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+
+    margin-top: 10px;
+  }
+  .hmtP {
+    position: absolute;
+    z-index: -1;
+    width: 70px;
+    top: -50px;
+    left: 16px;
+  }
+  .dzrd {
+    width: 30px;
+    margin: 0px auto 5px;
+    border-radius: 50%;
+  }
+  .paraVikas {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 600;
+    color: rgb(21, 22, 25);
+    text-align: center;
+  }
+  .placeVikas {
+    font-weight: 500;
+    margin: 0px;
+    font-size: 10px;
+    line-height: 19px;
+    color: rgb(85, 90, 104);
+    text-align: center;
+  }
+  .quote {
+    width: 70px;
+    height: 150px;
+    position: absolute;
+    margin-top: -52px;
+    z-index: -1;
+  }
+}
