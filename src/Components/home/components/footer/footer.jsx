@@ -1,73 +1,7 @@
 import "./style.css";
-import fir from "./image/fir.svg";
-import sec from "./image/sec.svg";
-import thi from "./image/thi.svg";
-
 export default function Footer() {
   return (
     <div style={{ backgroundColor: "white" }}>
-      <div className="d-flex flex-column">
-        <p className="footHere">Here’s why you’ll love ACKO</p>
-        <div className="d-flex w-100 align-items-start">
-          <div className="cardFooter">
-            <div>
-              <img
-                src={fir}
-                style={{
-                  height: "120px",
-                  width: "120px",
-                  marginBottom: "28px",
-                }}
-              ></img>
-            </div>
-            <p className="fotterPcard">Incredibly low premiums</p>
-            <p className="fotterPcardSub">
-              {" "}
-              Insuring things that matter to you shouldn't come at a cost.
-              That's why when you buy from us, you get insurance that fits your
-              pocket.
-            </p>
-          </div>
-
-          <div className="cardFooter">
-            <div>
-              <img
-                src={sec}
-                style={{
-                  height: "120px",
-                  width: "120px",
-                  marginBottom: "28px",
-                }}
-              ></img>
-            </div>
-            <p className="fotterPcard">Superquick and easy</p>
-            <p className="fotterPcardSub">
-              We’re easy, effortless and 100% digital. Forget paperwork, just
-              access all our services with just a few clicks.
-            </p>
-          </div>
-
-          <div className="cardFooter">
-            <div>
-              <img
-                src={thi}
-                style={{
-                  height: "120px",
-                  width: "120px",
-                  marginBottom: "28px",
-                }}
-              ></img>
-            </div>
-            <p className="fotterPcard">Hassle-free claims</p>
-            <p className="fotterPcardSub">
-              We’re on a mission to make insurance claims stress-free. Just give
-              us a call or file a claim online and experience cashless, speedy
-              claim settlements.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="footerMid">
         <div className="mid12">
           <h3>ACKO General Insurance Limited</h3>
