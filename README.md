@@ -1,6 +1,7 @@
-# [Acko Frontend](https://acko-vaibhav-solanki.vercel.app/)
+# [Acko Frontend](https://acko-three.vercel.app/)
 
 Acko General Insurance is a private sector general insurance company in India.
+all frontend code available on [Acko Frontend](https://github.com/pankajbisht03/Acko-Frontend/)
 
 ## Features:
 
@@ -32,11 +33,11 @@ A collaborative project built by a team of 4
 executed in 4 days.
 Team
 
-- [Pankaj Bisht](https://github.com/pankajbisht03)
 - [Vaibhav Solanki](https://github.com/Vaibhav-Solanki)
-- [test](https://github.com/)
-- [test](https://github.com)
-- [test](https://github.com)
+- [Santhosh Sundararajan](https://github.com/Santhosh-user)
+- [Pankaj Bisht](https://github.com/pankajbisht03)
+- [Salakha S](https://github.com/salakhas)
+- [Vinit Kumar](https://github.com)
 
 ## Install process
 
