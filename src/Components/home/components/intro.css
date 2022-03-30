@@ -21,6 +21,7 @@
 }
 .activeBlockIntro .imgSpanBlock {
   background-color: white;
+  cursor: auto;
 }
 .logoIn {
   color: #7d899b;
@@ -29,6 +30,7 @@
 .BlockIntro .imgSpanBlock {
   color: white;
   font-size: 22px;
+  cursor: pointer;
 }
 .activeBlockIntro .imgSpanBlock {
   color: rgb(94, 39, 201);
