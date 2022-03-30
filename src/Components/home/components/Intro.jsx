@@ -131,7 +131,7 @@ export default function Intro() {
             <div className="orBlock" />
           </div>
           <div
-            className="quote d-flex rounded-3 py-2"
+            className="quote d-flex rounded-3 py-2 justify-content-between"
             style={{ border: "1px solid rgb(147, 100, 237)" }}
           >
             <div className="innerQuote d-flex align-items-center">
