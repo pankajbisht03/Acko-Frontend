@@ -22,11 +22,11 @@
 .activeBlockIntro .imgSpanBlock {
   background-color: white;
 }
-.BlockIntro .imgSpanBlock > i {
+.BlockIntro .imgSpanBlock {
   color: white;
   font-size: 22px;
 }
-.activeBlockIntro .imgSpanBlock > i {
+.activeBlockIntro .imgSpanBlock {
   color: rgb(94, 39, 201);
 }
 .btnQuote {
@@ -37,7 +37,7 @@
   background-color: rgb(94, 39, 201);
   min-height: 80vh;
   color: var(--testCol);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .centreCont {
   max-width: 50%;
@@ -121,10 +121,10 @@
   .activeBlockIntro .imgSpanBlock {
     background-color: rgb(124, 71, 225);
   }
-  .BlockIntro .imgSpanBlock > i {
+  .BlockIntro .imgSpanBlock {
     color: rgb(94, 39, 201);
   }
-  .activeBlockIntro .imgSpanBlock > i {
+  .activeBlockIntro .imgSpanBlock {
     color: white;
   }
 }

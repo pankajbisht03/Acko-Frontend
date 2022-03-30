@@ -1,3 +1,4 @@
+import { FaCar, FaBiking, FaHeartbeat } from "react-icons/fa";
 import "./intro.css";
 
 export default function Intro() {
@@ -18,19 +19,19 @@ export default function Intro() {
           <div className="centre d-flex align-content-center align-items-center justify-content-around my-3">
             <div className="d-flex align-items-center justify-content-center flex-column w-100 BlockIntro activeBlockIntro">
               <span className="imgSpanBlock">
-                <i className="fa-solid fa-car" />
+                <FaCar />
               </span>
               <p>Car &amp; Taxi</p>
             </div>
             <div className="d-flex align-items-center justify-content-center flex-column w-100 BlockIntro">
               <span className="imgSpanBlock">
-                <i className="fa-solid fa-motorcycle" />
+                <FaBiking />
               </span>
               <p>Bike</p>
             </div>
             <div className="d-flex align-items-center justify-content-center flex-column w-100 BlockIntro">
               <span className="imgSpanBlock">
-                <i className="fa-solid fa-heart" />
+                <FaHeartbeat />
               </span>
               <p>Health</p>
             </div>
@@ -44,7 +45,6 @@ export default function Intro() {
               className="nonee"
               type="text"
               placeholder="Enter your car number"
-              required:true
               style={{
                 border: "none",
                 padding: "31px 20px",
