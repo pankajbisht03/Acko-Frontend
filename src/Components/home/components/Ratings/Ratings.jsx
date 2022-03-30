@@ -197,67 +197,65 @@ export default function Ratings() {
               }}
             />
           </div>
-          <p className="paraSmallReview">
+          <div className="paraSmallReview">
             95% <br /> 5{" "}
-          
-          <div
-            className="randomCss"
-            style={{
-              display: "inline-block",
-              maxWidth: "100%",
-              overflow: "hidden",
-              position: "relative",
-              boxSizing: " border-box",
-              margin: 0,
-            }}
-          >
             <div
+              className="randomCss"
               style={{
-                boxSizing: "borderBox",
-                display: "block",
+                display: "inline-block",
                 maxWidth: "100%",
+                overflow: "hidden",
+                position: "relative",
+                boxSizing: " border-box",
+                margin: 0,
               }}
             >
-              <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={{
-                  maxWidth: "100%",
+                  boxSizing: "borderBox",
                   display: "block",
-                  margin: 0,
-                  border: "none",
+                  maxWidth: "100%",
+                }}
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={{
+                    maxWidth: "100%",
+                    display: "block",
+                    margin: 0,
+                    border: "none",
+                    padding: 0,
+                  }}
+                />
+              </div>
+              <img
+                alt="Star"
+                src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgOSAxMCIgd2lkdGg9IjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTMuNzg4NDEgMS4zODUwOGMuMjk3NTgtLjU3OTIyOCAxLjEyNTYtLjU3OTIzIDEuNDIzMTggMGwuNzU4ODggMS40NzcxNWMuMTE2MTYuMjI2MTEuMzMyODYuMzgzNTUuNTgzNzkuNDI0MTVsMS42MzkzNy4yNjUyOGMuNjQyODQuMTA0MDMuODk4NzEuODkxNTEuNDM5NzggMS4zNTM1MmwtMS4xNzAzNCAxLjE3ODIxYy0uMTc5MTQuMTgwMzQtLjI2MTkyLjQzNTA5LS4yMjI5OS42ODYyOWwuMjU0MjkgMS42NDExYy4wOTk3Mi42NDM1Mi0uNTcwMTYgMS4xMzAyMS0xLjE1MTM3LjgzNjUybC0xLjQ4MjItLjc0ODk4Yy0uMjI2ODctLjExNDY0LS40OTQ3My0uMTE0NjQtLjcyMTYgMGwtMS40ODIyLjc0ODk4Yy0uNTgxMjEuMjkzNjktMS4yNTEwOS0uMTkzLTEuMTUxMzctLjgzNjUybC4yNTQyOS0xLjY0MTFjLjAzODkzLS4yNTEyLS4wNDM4NS0uNTA1OTUtLjIyMjk5LS42ODYyOWwtMS4xNzAzNDItMS4xNzgyMWMtLjQ1ODkyMzYtLjQ2MjAxLS4yMDMwNTUtMS4yNDk0OS40Mzk3ODMtMS4zNTM1MmwxLjYzOTM1OS0uMjY1MjhjLjI1MDk0LS4wNDA2LjQ2NzY0LS4xOTgwNC41ODM4LS40MjQxNXoiIGZpbGw9IiNmZjkxMDAiLz48L3N2Zz4="
+                decoding="async"
+                className="sc-jOVcOr gCDYhV"
+                style={{
+                  visibility: "inherit",
+                  position: "absolute",
+                  inset: 0,
+                  boxSizing: "border-box",
                   padding: 0,
+                  border: "none",
+                  margin: "auto",
+                  display: "block",
+                  width: "0px",
+                  height: "0px",
+                  minWidth: "100%",
+                  maxWidth: "100%",
+                  minHeight: "100%",
+                  maxHeight: "100%",
                 }}
               />
             </div>
-            <img
-              alt="Star"
-              src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgOSAxMCIgd2lkdGg9IjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTMuNzg4NDEgMS4zODUwOGMuMjk3NTgtLjU3OTIyOCAxLjEyNTYtLjU3OTIzIDEuNDIzMTggMGwuNzU4ODggMS40NzcxNWMuMTE2MTYuMjI2MTEuMzMyODYuMzgzNTUuNTgzNzkuNDI0MTVsMS42MzkzNy4yNjUyOGMuNjQyODQuMTA0MDMuODk4NzEuODkxNTEuNDM5NzggMS4zNTM1MmwtMS4xNzAzNCAxLjE3ODIxYy0uMTc5MTQuMTgwMzQtLjI2MTkyLjQzNTA5LS4yMjI5OS42ODYyOWwuMjU0MjkgMS42NDExYy4wOTk3Mi42NDM1Mi0uNTcwMTYgMS4xMzAyMS0xLjE1MTM3LjgzNjUybC0xLjQ4MjItLjc0ODk4Yy0uMjI2ODctLjExNDY0LS40OTQ3My0uMTE0NjQtLjcyMTYgMGwtMS40ODIyLjc0ODk4Yy0uNTgxMjEuMjkzNjktMS4yNTEwOS0uMTkzLTEuMTUxMzctLjgzNjUybC4yNTQyOS0xLjY0MTFjLjAzODkzLS4yNTEyLS4wNDM4NS0uNTA1OTUtLjIyMjk5LS42ODYyOWwtMS4xNzAzNDItMS4xNzgyMWMtLjQ1ODkyMzYtLjQ2MjAxLS4yMDMwNTUtMS4yNDk0OS40Mzk3ODMtMS4zNTM1MmwxLjYzOTM1OS0uMjY1MjhjLjI1MDk0LS4wNDA2LjQ2NzY0LS4xOTgwNC41ODM4LS40MjQxNXoiIGZpbGw9IiNmZjkxMDAiLz48L3N2Zz4="
-              decoding="async"
-              className="sc-jOVcOr gCDYhV"
-              style={{
-                visibility: "inherit",
-                position: "absolute",
-                inset: 0,
-                boxSizing: "border-box",
-                padding: 0,
-                border: "none",
-                margin: "auto",
-                display: "block",
-                width: "0px",
-                height: "0px",
-                minWidth: "100%",
-                maxWidth: "100%",
-                minHeight: "100%",
-                maxHeight: "100%",
-              }}
-            />
-          </div>
-          
             Ratings
-          </p>
+          </div>
         </div>
         <div className="reviewBoxesSmall">
           <div
