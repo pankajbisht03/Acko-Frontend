@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    /* line-height: 0.5; */
+}
+.firstIcon{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+.secondIcon{
+    display: flex;
+    width: 240px;
+    justify-content: space-evenly;
+}
+.thirdIcon{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.fourthIcon{
+    display: flex;
+    width: 185px;
+    justify-content: space-evenly;
+}
+.carImg{
+    margin-top: 20px;
+}
+
+
