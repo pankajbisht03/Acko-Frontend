@@ -17,7 +17,7 @@ export const Content = () => {
             </div>
             <div className="checkbox-container">
                 <input type="checkbox" id="agree" name="agree" value="bike" />
-                <label htmlFor="agree">Recieve improtant updates on Whatsapp</label>
+                <label htmlFor="agree">Recieve important updates on Whatsapp</label>
             </div>
             <button className="button-grey">Get OTP</button>
            
