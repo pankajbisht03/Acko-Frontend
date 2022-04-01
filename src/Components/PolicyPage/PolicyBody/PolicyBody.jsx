@@ -31,7 +31,7 @@ export const PolicyBody = () => {
                 <div className="adv2box">
                     <div className="leftadv2div" style={{width: "auto"}}>
                         <div className="imgad2div">
-                            <img src="https://container-app.ackoassets.com/am/myaccount_frontend/608eca5bbd4a5b668eb6d6aed4c028cc.svg" class="imgadv2"/>
+                            <img src="https://container-app.ackoassets.com/am/myaccount_frontend/608eca5bbd4a5b668eb6d6aed4c028cc.svg" className="imgadv2"/>
                         </div>
                         <div className="textadv2div">
                             <p className="para1adv2div">Download Acko App on your phone</p>
@@ -54,11 +54,11 @@ export const PolicyBody = () => {
                     <div className="divparadiv">
                         <div id="Car" className="carnewcar">
                             <div className="imgcardiv">
-                                <img src="https://myaccount.ackoassets.com/static/images/Car-new.svg" alt="car icon" class="imgcar"/>
+                                <img src="https://myaccount.ackoassets.com/static/images/Car-new.svg" alt="car icon" className="imgcar"/>
                             </div>
                             <div className="carpara">
                                 <p className="carlilpara">Car</p>
-                                <img src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg" class="arrowcar"/>
+                                <img src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg" className="arrowcar"/>
                             </div></div>
                         <div id="Bike" className="bikenewbike">
                                 <div className="imgbikediv">
@@ -114,7 +114,7 @@ export const PolicyBody = () => {
                     <div className="recon">
                         <div className="recomm">
                             <div className="recommimg">
-                                <img src="https://myaccount.ackoassets.com/static/images/golden-shield.svg" class="imgsimgs"/>
+                                <img src="https://myaccount.ackoassets.com/static/images/golden-shield.svg" className="imgsimgs"/>
                             </div>
                             <div className="recommparadiv">
                                 <p className="gotacar">What is Acko Assured Claim?</p>
@@ -230,27 +230,32 @@ export const PolicyBody = () => {
                 </div>
             </div>
         </ul>
-          <div className="adv2div">
-            <div className="adv2box">
-                <div className="leftadv2div" style={{width: "auto"}}>
-                    <div className="imgad2div">
-                        <img src="https://container-app.ackoassets.com/am/myaccount_frontend/608eca5bbd4a5b668eb6d6aed4c028cc.svg" className="imgadv2"/>
+      </div>
+      <div id="footer" className="footerDiv">
+        <div className="eVokGh">
+            <div className="jCzOll">
+                <div className="leftFooterDivPolicy">
+                    <div className="imgFooterDiv">
+                        <img src="https://container-app.ackoassets.com/am/myaccount_frontend/608eca5bbd4a5b668eb6d6aed4c028cc.svg" className="klFHdB"/>
                     </div>
-                    <div className="textadv2div">
-                        <p className="para1adv2div">Download Acko App on your phone</p>
-                        <p className="para2adv2div">Manage your policies &amp; claims on the go</p>
+                    <div className="jrdOPY">
+                        <p className="dwnldackoapp">Download Acko App </p>
+                        <p className="smngpolicies">Manage policies and claims on the go</p>
                     </div>
                 </div>
-                <div rel="noopener" className="googleplayadv2">
-                    <img src="https://container-app.ackoassets.com/am/myaccount_frontend/9f28e7a7d0e3e3ce64ffc96c5b967ced.svg" className="imggoogle"/>
-                </div>
-                <div rel="noopener" className="appstoreadv2">
-                    <img src="https://container-app.ackoassets.com/am/myaccount_frontend/76f70564841e8bdbff954a71cb1405fe.svg" className="appimg"/>
+                <div rel="noopener" className="ccVXnw">
+                    <span><small>Install</small></span>
                 </div>
             </div>
+            <div className="sc-gHrtbs hmzPfW">
+                <hr/>
+            </div>
+            <div className="detailsFooterPolicy">
+                <p className="parafooterpolicy1">CIN: U66000MH2016PLC287385</p>
+                <p className="parafooterpolicy2">IRDAI Registration No: 157</p>
+            </div>
         </div>
-      </div>
-        
+    </div>
         </>
     )
 }
