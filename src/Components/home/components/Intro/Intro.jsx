@@ -1,8 +1,10 @@
 import { FaCar, FaBiking, FaHeartbeat } from "react-icons/fa";
 import { useState } from "react";
 import "./intro.css";
-
+import { useNavigate } from "react-router-dom";
+useNavigate;
 export default function Intro() {
+  const naviget = useNavigate();
   let active =
     "d-flex align-items-center justify-content-center flex-column w-100 BlockIntro activeBlockIntro";
   const [first, setfirst] = useState({
@@ -121,6 +123,7 @@ export default function Intro() {
                 cursor: "pointer",
                 padding: "0px 6px",
               }}
+              onClick={() => naviget("/getpolicy")}
             >
               Insure now
             </button>
