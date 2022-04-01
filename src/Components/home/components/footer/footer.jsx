@@ -395,12 +395,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="footNoteDiv">
+      <div className="footNoteDiv m-3">
         <p className="footId">CIN: U66000KA2016PLC138288</p>
         <p className="footId">IRDAI Registration No: 157</p>
         <p className="footId">Category: Non-Life Insurance</p>
       </div>
-      <div className="footNoteDiv">
+      <div className="footNoteDiv m-3">
         <p className="footNote">
           The use of images and brands are only for the purpose of indication
           and illustration. ACKO claims no rights on the IP rights of any third
