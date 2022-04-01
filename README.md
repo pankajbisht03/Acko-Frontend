@@ -37,7 +37,7 @@ Team
 - [Santhosh Sundararajan](https://github.com/Santhosh-user)
 - [Pankaj Bisht](https://github.com/pankajbisht03)
 - [Salakha S](https://github.com/salakhas)
-- [Vinit Kumar](https://github.com)
+- [Vinit Kumar](https://github.com/vinitkr567)
 
 ## Install process
 
