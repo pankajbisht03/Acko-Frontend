@@ -1,0 +1,206 @@
+body{
+    background-color: #F6F7FB;
+    font-family: 'Inter', sans-serif;
+}
+
+.policyNavbar{
+    background-color: white;
+    height: 70px;
+}
+
+.positionOfPolicyNav{
+    margin-left: 2.7%;
+}
+.helpAround{
+    margin-right: 35px;
+    display: flex;
+}
+.helpPolicy{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #0d6efd;
+}
+
+.displayPolicyHamburger{
+    display: none;
+}
+.mMenuSubBox{
+    display: none;
+}
+
+@media (max-width: 765px){
+    .displayPolicyHamburger{
+        display: block;
+        width: 24px;
+        height: 28px;
+        color: black;
+    }
+    
+    .dispol{
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .helpAround{
+        display: none;
+    }
+    .hambgdiv {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0);
+        animation-name: klcRRl;
+        animation-duration: 300ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    .hamdiv{
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        top: 0px;
+        min-height: -webkit-fill-available;
+        animation-name: gIzZAR;
+        animation-duration: 300ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    .gwtQJq {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 90%;
+        overflow-y: scroll;
+        background: rgb(255, 255, 255);
+        min-height: -webkit-fill-available;
+    }
+    .prof{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px 16px;
+        background: rgb(147, 100, 237);
+        width: auto;
+        box-sizing: border-box;
+    }
+    .img1prof{
+        width: 24px;
+        height: 24px;
+        align-self: flex-end;
+    }
+    .img2prof{
+        height: 55px;
+        width: 55px;
+        margin: 0px 0px 14px;
+    }
+    
+    .mMenuSubBox{
+        display: flex;
+        flex-direction: column;
+        min-width: 320px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 90%;
+        background: white;
+    }
+    .upperMmenu{
+        width: 100%;
+        background-color: #9364ed;
+        max-height: 166px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .lowwerMmenu{
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    .lowwerMmenu>div {
+        margin-bottom: 1.2rem;
+    }
+    .lowBoxLi > li > a{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #434f5a;
+    }
+    .lowBoxLi > li{
+        display: flex;
+        margin: 10px 0 10px -25px;
+    }
+    
+    .partnerClaim>button {
+        display: flex;
+        cursor: pointer;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 65px;
+        height: 30px;
+        margin-top: 16px;
+    }
+    .aLinkUnderMenu {
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 16px;
+        padding-left: 4px;
+    }
+    .aDividerUnderSub {
+        margin-right: 14px;
+        width: 32px;
+        height: 32px;
+    }
+    .fixMarginA {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #434f5a;
+    }
+    .fimnwF {
+        width: 100%;
+        display: flex;
+    }
+    .dcfRXK {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .iUAJNl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .MIYAO {
+        margin: 0px 0px 5px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgb(255, 255, 255);
+    }
+    .gYIMCp {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+    }
+}

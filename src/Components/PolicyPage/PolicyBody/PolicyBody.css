@@ -1,0 +1,620 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color: #F6F7FB;
+    font-family: 'Inter', sans-serif;
+}
+
+.mMenuSubBox{
+    display: none;
+}
+.policygriddiv{
+    margin-top: 15px;
+    margin: 47px;
+    display: grid;
+    gap:34px;
+    grid-template-columns: 56% auto;
+    font-weight: 700;
+}
+.policy1,.policy2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.policygriddiv > div > div{
+    background-color: white;
+}
+.newpolicydiv{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0px 0px 26px;
+    grid-area: a;
+}
+.newnew{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: rgb(246, 247, 251);
+}
+.newparanew{
+    margin: 0px 0px 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgb(67, 79, 90);
+}
+.divparadiv{
+    width: 100%;
+    display: flex;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.carnewcar,.bikenewbike,.healthnewhealth{
+    display: flex;
+    box-sizing: border-box;
+    background: #ECE4F9;
+    border-radius: 12px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 14px 0px;
+    cursor: pointer;
+    width: 57%;
+}
+.healthnewhealth{
+    margin-right: 0px;
+}
+
+/*.carnewcar{
+    margin-left: 5%;
+}*/
+
+
+
+.imgcardiv,.imgbikediv,.imghealthdiv{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(236, 228, 249);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.bikenewbike,.imgbikediv{
+    background: rgb(228, 246, 254);
+}
+
+.healthnewhealth,.imghealthdiv{
+    background: rgb(255, 233, 238);
+}
+
+.imgcar,.imgbike,.imghealth{
+    width: 36px;
+    height: 36px;
+}
+.carpara,.bikepara,.healthpara{
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.carlilpara,.bikelilpara,.healthlilpara{
+    margin: 0px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    color: rgb(67, 79, 90);
+    text-shadow: rgb(0 0 0 / 15%) 0px 0px 8px;
+    padding-left: 10px;
+}
+
+.arrowcar,.arrowbike,.arrowhealth{
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+}
+
+.searchresultdiv{
+    height: 241.5px;
+    border-radius: 5px; 
+    grid-area: b;
+}
+.recomenddiv{
+    height: fit-content;
+    border-radius: 5px; 
+    padding-left: 0;
+    grid-area: c;
+}
+.recomdivs{
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.recomm{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+.recommimg{
+    width: fit-content;
+    margin-right: 18px;
+}
+.imgsimgs{
+    width: 84px;
+    height: 84px;
+}
+
+.recommparadiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.gotacar{
+    margin: 0px 0px 4px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(40, 46, 51);
+}
+
+.savebigcar{
+    
+    margin: 0px 0px 12px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(65, 74, 83);
+    font-weight: 400;
+}
+
+.insurerecomm{
+    display: flex;
+    border: 0.5px solid rgb(67, 79, 90);
+    background-color: rgb(255, 255, 255);
+    padding: 3px 12px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.recinsure{
+    margin: 0px;
+    color: rgb(67, 79, 90);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.adv1div{
+    width: 100%;
+    display: flex;
+    background-color: rgb(246, 247, 251);
+    padding: 0px;
+    margin-top: 24px;
+    border-radius: 10px;
+    grid-area: d;
+}
+.adv2div{
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: url("https://container-app.ackoassets.com/am/myaccount_frontend/a88b463a2e59ab6c756f76f26a5facab.svg") right center no-repeat rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 24px;
+    grid-area: e;
+}
+.policygriddiv2{
+    display: none;
+}
+.imgBoxOpen{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.oopsDiv{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+.oopsPara{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(65, 74, 83);
+    margin: 16px auto;
+    text-align: center;
+}
+
+.buyAnewPolicy{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(40, 113, 234);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.adv1box{
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.imgadv1{
+    margin-right: 10px;
+    height: 48px;
+    width: 48px;
+}
+.advdescdiv{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.anotheradvdescdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.adv1paradiv{
+    margin: 0px 0px 4px;
+    letter-spacing: 0.02em;
+    color: rgb(11, 14, 52);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+.adv2paradiv{
+    font-weight: 500;
+    margin: 0px;
+    color: rgb(112, 127, 140);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.adv2box{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.leftadv2div{
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.imgad2div{
+    width: 46px;
+    height: 46px;
+}
+
+.imgadv2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.textadv2div{
+    margin: 0px 30px 0px 11px;
+}
+
+.para1adv2div{
+    margin: 0px 0px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(65, 74, 83);
+}
+
+.para2adv2div{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgb(112, 127, 140);
+}
+
+.googleplayadv2{
+    border-radius: 6px;
+    height: 20px;
+    width: 65px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.appstoreadv2{
+    border-radius: 6px;
+    height: 20px;
+    width: 65px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.imggoogle,.appimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 765px){
+    .gwtQJq {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 90%;
+        overflow-y: scroll;
+        background: rgb(255, 255, 255);
+        min-height: -webkit-fill-available;
+    }
+    .prof{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px 16px;
+        background: rgb(147, 100, 237);
+        width: auto;
+        box-sizing: border-box;
+    }
+    .img1prof{
+        width: 24px;
+        height: 24px;
+        align-self: flex-end;
+    }
+    .img2prof{
+        height: 55px;
+        width: 55px;
+        margin: 0px 0px 14px;
+    }
+    .policygriddiv{
+        display: none;
+    }
+    .policygriddiv2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        font-weight: 700;
+    }
+    policygriddiv2 > div > div{
+        background-color: white;
+    }
+    .mMenuSubBox{
+        display: flex;
+        flex-direction: column;
+        min-width: 320px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 90%;
+        background: white;
+    }
+    .upperMmenu{
+        width: 100%;
+        background-color: #9364ed;
+        max-height: 166px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .lowwerMmenu{
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    .lowwerMmenu>div {
+        margin-bottom: 1.2rem;
+    }
+    .lowBoxLi > li > a{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #434f5a;
+    }
+    .lowBoxLi > li{
+        display: flex;
+        margin: 10px 0 10px -25px;
+    }
+    
+    .partnerClaim>button {
+        display: flex;
+        cursor: pointer;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 65px;
+        height: 30px;
+        margin-top: 16px;
+    }
+    .aLinkUnderMenu {
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 16px;
+        padding-left: 4px;
+    }
+    .aDividerUnderSub {
+        margin-right: 14px;
+        width: 32px;
+        height: 32px;
+    }
+    .fixMarginA {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #434f5a;
+    }
+    .fimnwF {
+        width: 100%;
+        display: flex;
+    }
+    .dcfRXK {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .iUAJNl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .recomm{
+        margin-bottom: 10px;
+    }
+    .MIYAO {
+        margin: 0px 0px 5px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgb(255, 255, 255);
+    }
+    .gYIMCp {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+    }
+    /*footer*/
+    .footerDiv{
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 17px 0px;
+        border-top: 1px solid rgb(228, 234, 241);
+        background-color: white;
+        margin-top: -30px;
+    }
+    .eVokGh{
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
+    .jCzOll {
+        width: 100%;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        display: flex;
+    }
+    .leftFooterDivPolicy{
+        width: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+    }
+    .imgFooterDiv{
+        width: 36px;
+        height: 36px;
+    }
+    .klFHdB {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .jrdOPY{
+        margin: 0px 10px;
+    }
+    .dwnldackoapp{
+        margin: 0px;
+        font-weight: bold;
+        /* font-size: 12px; */
+        color: rgb(65, 74, 83);
+    }
+    .smngpolicies{
+        margin: 0px;
+        font-weight: 500;
+        font-size: 10px;
+        color: rgb(112, 127, 140);
+    }
+    .ccVXnw {
+        border-radius: 6px;
+        color: rgb(67, 79, 90);
+        border: 1px solid rgb(67, 79, 90);
+        height: max-content;
+        padding: 0px 11px 2px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .hmzPfW {
+        display: block;
+        margin: 16px 0px;
+    }
+    .detailsFooterPolicy{
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    .parafooterpolicy1{
+        font-weight: 500;
+        margin: 0px;
+        font-size: 12px;
+        color: rgb(67, 79, 90);
+    }
+    .parafooterpolicy2{
+        font-weight: 500;
+        margin: 0px;
+        font-size: 12px;
+        color: rgb(67, 79, 90);
+    }
+}
