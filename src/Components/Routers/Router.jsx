@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../home/Home";
 import NotFound from "../NotFound/NotFound";
+import { PolicyPage } from "../PolicyPage/PolicyPage";
 
 export default function Router() {
   return (
