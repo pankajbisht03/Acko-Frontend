@@ -1,12 +1,11 @@
-import { PolicyBody } from "./PolicyBody/PolicyBody"
-import Navbar from "./PolicyNavbar/Navbar"
+import { PolicyBody } from "./PolicyBody/PolicyBody";
+import Navbar from "./PolicyNavbar/Navbar";
 
-
-export const PolicyPage = () => {
-    return (
-        <>
-            <Navbar/>
-            <PolicyBody/>
-        </>
-    )
+export default function PolicyPage() {
+  return (
+    <>
+      <Navbar />
+      <PolicyBody />
+    </>
+  );
 }
