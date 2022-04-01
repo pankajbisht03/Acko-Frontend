@@ -1,58 +1,123 @@
-.fa-facebook {
-  background: #3b5998;
-  color: white;
+.footId {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 23px;
+  color: rgb(0, 0, 0);
+  margin: 0px 32px 0px 0px;
 }
-
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.footHere {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 800;
-  color: rgb(40, 46, 51);
-  margin: 0px 0px 60px;
-  text-align: center;
-}
-.cardFooter {
+.footNoteDiv {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  padding: 0px 10px;
-  max-width: 311px;
+  flex-flow: row wrap;
   width: 100%;
-  margin: auto;
-  text-align: center;
 }
-.fotterPcard {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-  color: rgb(40, 46, 51);
-  margin: 0px 0px 16px;
-  text-align: center;
-}
-.fotterPcardSub {
+.footNote {
+  font-weight: 500;
   margin: 0px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
   color: rgb(67, 79, 90);
-  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  width: 100%;
+}
+
+.footer_area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+  box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+  padding: 60px;
+}
+.footer_area .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.single-footer-widget {
+  position: relative;
+  z-index: 1;
+}
+.single-footer-widget .copywrite-text a {
+  color: #747794;
+  font-size: 1rem;
+}
+.single-footer-widget .copywrite-text a:hover,
+.single-footer-widget .copywrite-text a:focus {
+  color: #3f43fd;
+}
+.single-footer-widget .widget-title {
+  margin-bottom: 1.5rem;
+}
+.single-footer-widget .footer_menu li a {
+  color: #747794;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+  color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+  margin-bottom: 0;
+}
+.ackoFoottitle {
+  color: rgb(21, 22, 25);
+  margin: 0px 0px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ackoFootPBlock {
+  margin: 0px 0px 30px;
+  font-weight: 400;
+  max-width: 265px;
+  width: 100%;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  color: rgb(65, 74, 83) !important;
+}
+footer li > a {
+  color: rgb(21, 22, 25);
+  font-size: 12px;
+  line-height: 26px;
+  text-decoration: none;
+}
+.socialT {
+  font-weight: 500;
+  line-height: 22px;
+  margin: 15px 0px 20px;
+  font-size: 14px !important;
+  color: rgb(65, 74, 83) !important;
+}
+@-webkit-keyframes bi-cycle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes bi-cycle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+ol li,
+ul li {
+  list-style: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .thisWillBeHidden {
+    display: none;
+  }
 }
