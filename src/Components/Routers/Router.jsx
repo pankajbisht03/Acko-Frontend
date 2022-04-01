@@ -8,6 +8,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/myPolicy" element={<PolicyPage/>}/>
       </Routes>
     </>
   );
