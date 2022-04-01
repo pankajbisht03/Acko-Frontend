@@ -875,7 +875,7 @@ export default function Navbar() {
             </div>
             <div className="lowwerMmenu">
               <div className="lowBoxD1">
-                <ul className="lowBoxLi">
+                <ul className="lowBoxLi" style={{ marginLeft: "20px" }}>
                   <li>
                     <a href="#">
                       <img src="https://myaccount.ackoassets.com/static/images/header-icons/raise-a-claim-v2.svg" />
