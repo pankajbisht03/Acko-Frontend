@@ -41,7 +41,6 @@
 }
 #introMblock {
   background-color: rgb(94, 39, 201);
-  min-height: 80vh;
   color: var(--testCol);
   transition: 0.1s;
   padding-bottom: 25px;
