@@ -1,11 +1,15 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import "./Navbar.css";
 export default function Navbar() {
+  const naviget = useNavigate();
   const [first, setfirst] = useState({
     pro: false,
     reso: false,
     logM: false,
     mMenu: false,
+    logPart: false,
   });
   const [userLog, setuserLog] = useState(true);
   return (
@@ -327,52 +331,141 @@ export default function Navbar() {
                   style={{ display: "block", top: "2.3rem" }}
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a
+                      className="dropdown-item"
+                      onClick={() => naviget("/login")}
+                    >
                       <img src="https://myaccount.ackoassets.com/static/images/header-icons/manage-policy-v2.svg" />
                       manage policy
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a
+                      className="dropdown-item"
+                      onClick={() => naviget("/login")}
+                    >
                       <img src="https://myaccount.ackoassets.com/static/images/header-icons/raise-a-claim-v2.svg" />
                       Raise a claim
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a
+                      className="dropdown-item"
+                      onClick={() => naviget("/login")}
+                    >
                       <img src="https://myaccount.ackoassets.com/static/images/header-icons/renew-policy-v2.svg" />
                       Renew policy
                     </a>
                   </li>
                 </ul>
               )}
-              <a className="Inbtn" href="#">
+              <a className="Inbtn" onClick={() => naviget("/login")}>
                 login
               </a>
             </div>
             <a style={{ margin: "0px 10px 0px 0px" }}>Help</a>
             {userLog && (
-              <svg
-                className="mx-2"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.625 30.6668C24.7252 30.6668 31.2917 24.1003 31.2917 16.0002C31.2917 7.89999 24.7252 1.3335 16.625 1.3335C8.52486 1.3335 1.95837 7.89999 1.95837 16.0002C1.95837 24.1003 8.52486 30.6668 16.625 30.6668Z"
-                  fill="#F6F7FB"
-                ></path>
-                <path
-                  d="M20.6461 11.7554C20.6461 13.9894 18.859 16.1116 16.6251 16.1116C14.3911 16.1116 12.604 13.9894 12.604 11.7554C12.604 9.52152 14.3911 7.73438 16.6251 7.73438C18.859 7.73438 20.6461 9.52152 20.6461 11.7554Z"
-                  fill="#9364ED"
-                ></path>
-                <path
-                  d="M23.2046 22.5781C23.3163 23.1365 22.9812 23.695 22.311 23.9184C21.194 24.2535 18.9601 24.7003 16.6145 24.7003C14.2689 24.7003 12.0349 24.1418 10.918 23.8067C10.3595 23.695 10.0244 23.1365 10.0244 22.4664C10.4712 19.3389 12.5173 17.6064 16.6145 17.6064C20.6094 17.6064 22.7578 19.4506 23.2046 22.5781Z"
-                  fill="#9364ED"
-                ></path>
-              </svg>
+              <div onClick={() => setfirst({ logPart: !first.logPart })}>
+                <svg
+                  className="mx-2"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.625 30.6668C24.7252 30.6668 31.2917 24.1003 31.2917 16.0002C31.2917 7.89999 24.7252 1.3335 16.625 1.3335C8.52486 1.3335 1.95837 7.89999 1.95837 16.0002C1.95837 24.1003 8.52486 30.6668 16.625 30.6668Z"
+                    fill="#F6F7FB"
+                  ></path>
+                  <path
+                    d="M20.6461 11.7554C20.6461 13.9894 18.859 16.1116 16.6251 16.1116C14.3911 16.1116 12.604 13.9894 12.604 11.7554C12.604 9.52152 14.3911 7.73438 16.6251 7.73438C18.859 7.73438 20.6461 9.52152 20.6461 11.7554Z"
+                    fill="#9364ED"
+                  ></path>
+                  <path
+                    d="M23.2046 22.5781C23.3163 23.1365 22.9812 23.695 22.311 23.9184C21.194 24.2535 18.9601 24.7003 16.6145 24.7003C14.2689 24.7003 12.0349 24.1418 10.918 23.8067C10.3595 23.695 10.0244 23.1365 10.0244 22.4664C10.4712 19.3389 12.5173 17.6064 16.6145 17.6064C20.6094 17.6064 22.7578 19.4506 23.2046 22.5781Z"
+                    fill="#9364ED"
+                  ></path>
+                </svg>
+
+                {first.logPart && (
+                  <ul
+                    className="dropdown-menu animated swing"
+                    style={{
+                      display: "block",
+                      marginTop: "15px",
+                      right: "10px",
+                    }}
+                  >
+                    <li onClick={() => naviget("/mypolicy")}>
+                      <a className="dropdown-item" href="#">
+                        <img
+                          height="20px"
+                          width="20px"
+                          src="https://myaccount.ackoassets.com/static/images/header-icons/my-policy-v2.svg"
+                          className="sc-jtRfpW bNunDk"
+                        />
+                        <p className="textPuserLog">My policies</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item">
+                        <img
+                          height="20px"
+                          width="20px"
+                          src="https://myaccount.ackoassets.com/static/images/header-icons/my-profile-v2.svg"
+                          className="sc-jtRfpW bNunDk"
+                        />
+                        <p className="textPuserLog">My profile</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <p className="textPuserLog" style={{ paddingLeft: 0 }}>
+                          Logout
+                        </p>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6"
+                            stroke="#7682A6"
+                            strokeWidth="1.33333"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                          <path
+                            d="M10.667 11.3327L14.0003 7.99935L10.667 4.66602"
+                            stroke="#7682A6"
+                            strokeWidth="1.33333"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                          <path
+                            d="M14 8H6"
+                            stroke="#7682A6"
+                            strokeWidth="1.33333"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </div>
             )}
           </div>
         </div>
@@ -773,7 +866,12 @@ export default function Navbar() {
                 />
               </div>
               <p className="mManuManageP">Manage your policy</p>
-              <button className="loginBtnMmenu">Login</button>
+              <button
+                className="loginBtnMmenu"
+                onClick={() => naviget("/login")}
+              >
+                Login
+              </button>
             </div>
             <div className="lowwerMmenu">
               <div className="lowBoxD1">

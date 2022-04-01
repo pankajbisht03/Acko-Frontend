@@ -1,72 +1,71 @@
-
-    .content {
-        /* margin: auto; */
-        /* vertical-align: middle;
+.content {
+  /* margin: auto; */
+  /* vertical-align: middle;
         align-items: center; */
-         /* margin: 0 auto; */
-         text-align: center;
-         padding-top: 50px;;
-    }
+  /* margin: 0 auto; */
+  text-align: center;
+  padding-top: 50px;
+}
 
-    
+.center-image {
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+  justify-content: center;
+}
 
-    .center-image {
-        display: flex;
-        vertical-align: middle;
-        margin: auto;
-        justify-content: center;
-        
-    }
+.center-image svg {
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+}
 
-    .center-image svg {
-        display: flex;
-        vertical-align: middle;
-        margin: auto;
-        
-    }
+.heading {
+  font-size: 18px;
+  color: rgb(21, 22, 25);
+  font-weight: 500;
+  margin: 30px 0px 0px;
+  text-align: center;
+  padding: 0px 20px;
+}
 
-    .heading {
-        font-size: 20px;
-        margin: 0px;
-        padding-top: 50px;
-    }
+.text-small {
+  font-size: 12px;
+  color: rgb(21, 22, 25);
+  font-weight: 400;
+  margin: 6px 0px 0px;
+  text-align: center;
+  padding: 0px 20px;
+}
 
-    .text-small {
-        font-size: 12px;
-        margin: 0px;
-        padding-top: 5px;
-    }
+#big-input {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-top: 40px;
+  font-size: 20px;
+  padding-left: 20px;
+}
 
-    #big-input {
-        height: 50px;
-        width: 300px;
-        border-radius: 10px;
-        border: 1px solid grey;
-        margin-top: 40px;
-        font-size: 20px;
-        padding-left: 20px;
-    }
+.checkbox-container {
+  padding-top: 20px;
+}
 
-    
+.button-grey {
+  margin-top: 40px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #44cb86;
+  color: white;
+  font-size: 15px;
+}
 
-    .checkbox-container {
-        padding-top: 20px;
-    }
-
-    .button-grey {
-        margin-top: 40px;
-        height: 50px;
-        width: 120px;
-        border-radius: 10px;
-        border: 1px solid white;
-        background-color: #44cb86;
-        color: white;
-        font-size: 15px;
-    }
-
-    /* This is to remove increment/decrement in input area */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
+/* This is to remove increment/decrement in input area */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

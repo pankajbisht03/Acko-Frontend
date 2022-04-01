@@ -1,6 +1,15 @@
 * {
   transition: 0.1s;
 }
+.textPuserLog {
+  display: inline;
+  color: rgb(21, 22, 25);
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+  text-decoration: none;
+}
 .subMenu-Box {
   width: 100%;
   display: flex;

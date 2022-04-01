@@ -3,12 +3,14 @@ import Home from "../home/Home";
 import NotFound from "../NotFound/NotFound";
 import PolicyPage from "../PolicyPage/PolicyPage";
 import Auth from "../Auth/Auth";
+import GetPolicy from "../GetPolicy/GetPolicy";
 
 export default function Router() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/getpolicy" element={<GetPolicy />} />
         <Route path="/myPolicy" element={<PolicyPage />} />
         <Route path="/login" element={<Auth />} />
         <Route path="/*" element={<NotFound />} />
