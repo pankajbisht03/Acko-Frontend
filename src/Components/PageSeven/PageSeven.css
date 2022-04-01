@@ -164,3 +164,48 @@ padding-top: 8px;
 
 }
 
+@media only screen and (max-width: 600px){
+
+       
+
+    .heading-part{
+        display: none;
+    }
+
+    .right {
+        display: none;
+        
+    }
+    
+    .main-content{
+        width: 600px;
+
+    }
+
+    .loading-bar-container {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .h2{
+        text-align: center;
+    }
+
+    .text-image{
+        flex-direction: column-reverse;
+    } 
+    .text-image-right {
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heading-checkbox{
+        font-size: 10px;
+    }
+    
+
+}
