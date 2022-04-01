@@ -1,0 +1,48 @@
+#sorry-text {
+  font-weight: 700;
+  font-size: 30px;
+  color: #5d607c;
+}
+#info-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0b0e34;
+}
+.product-button {
+  border: 1px solid #e4eaf1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 2rem 1rem;
+  padding: 7px;
+}
+#car-and-taxi,
+#bike,
+#health {
+  align-items: center;
+  cursor: pointer;
+}
+.product-image {
+  height: 40px;
+}
+.center-page {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.itWasneeded {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+.product-title {
+  padding-left: 16px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .product-button {
+    margin: 1rem 0;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+}
