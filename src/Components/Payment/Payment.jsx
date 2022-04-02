@@ -9,7 +9,7 @@ import "./Payment.css";
 export default function Pricing() {
   const logIn = async () => {
     try {
-      const res = await axios.post("https://ackobackend.herokuapp.com/paynow", {
+      const res = await axios.post("https://ackobackend.herokuapp.com/pay/paynow", {
         email: inputValue,
       });
       const Data = await res.data;
