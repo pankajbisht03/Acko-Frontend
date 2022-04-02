@@ -153,3 +153,41 @@
 .text-image {
   justify-content: space-between;
 }
+.getPolicyFormTile {
+  width: 100%;
+  display: flex;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(21, 22, 25);
+  line-height: 29px;
+  letter-spacing: 0.6px;
+}
+.getPolicyFormsub {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  color: rgb(21, 22, 25);
+}
+.boxForbtn {
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  margin-top: 1.5em;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75em;
+  border: 1px solid rgb(214, 217, 224);
+  margin-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+  border: none;
+}
+.btmLogodetail {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 17px;
+  color: rgb(21, 22, 25);
+  white-space: pre-line;
+}

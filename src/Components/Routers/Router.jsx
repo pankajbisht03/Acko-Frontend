@@ -10,8 +10,8 @@ export default function Router() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/getpolicy" element={<GetPolicy />} />
-        <Route path="/myPolicy" element={<PolicyPage />} />
+        <Route path={"/getpolicy"} element={<GetPolicy />} />
+        <Route path={"/myPolicy"} element={<PolicyPage />} />
         <Route path="/login" element={<Auth />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
