@@ -24,7 +24,7 @@ export default function PageSeven() {
       console.log(error);
     }
     if (first.stage == 5) {
-      naviget("/paynow");
+      naviget("/Payment");
     }
   }, [first]);
   const param = useParams();

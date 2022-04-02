@@ -1,0 +1,96 @@
+.nomanp {
+  width: 100%;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  display: flex;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgb(67, 79, 90);
+}
+.pPrice {
+  max-width: 95%;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: rgb(51, 51, 51);
+}
+.bPprice {
+  max-width: 90%;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 15px;
+  color: rgb(137, 144, 161);
+  margin-top: 0.4em;
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.addDivFirst {
+  display: flex;
+  width: 450px;
+}
+.addP {
+  margin-left: 10px;
+  font-weight: 500;
+}
+.btnAddFirst {
+  margin-left: 123px;
+}
+
+.paraGrey {
+  color: grey;
+  font-size: 12px;
+}
+.addDivSecond {
+  display: flex;
+  justify-content: space-between;
+  width: 443px;
+}
+.price {
+  max-width: 500px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.amount {
+  font-weight: 600;
+  font-size: 20px;
+}
+.addBtn {
+  width: 60px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: skyblue;
+  color: rgba(24, 137, 202, 0.911);
+  background-color: white;
+}
+.buyBtn {
+  width: 150px;
+  height: 50px;
+  margin-top: 7px;
+  color: white;
+  background-color: #149452;
+  border-radius: 15px;
+  border: none;
+}
+.green {
+  color: lightgreen;
+}
+.lastEmi {
+  margin-top: 10px;
+}
+.emi {
+  border: 1px solid black;
+  color: white;
+  background-color: grey;
+  border-radius: 3px;
+  border: none;
+}
