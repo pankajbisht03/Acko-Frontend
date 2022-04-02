@@ -5,19 +5,12 @@ import {
   MdOutlineFamilyRestroom,
 } from "react-icons/md";
 import "./Payment.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {
-  const logIn = async () => {
-    try {
-      const res = await axios.post("https://ackobackend.herokuapp.com/pay/paynow", {
-        email: inputValue,
-      });
-      const Data = await res.data;
-      console.log(Data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const naviget = useNavigate();
+
   return (
     <>
       <Header />
@@ -82,7 +75,12 @@ export default function Pricing() {
           <div></div>
           <div className="price">
             <p className="amount">₹3,221 + GST</p>
-            <button className="buyBtn " onClick={() => logIn}>
+            <button
+              className="buyBtn "
+              onClick={() =>
+                window.open("https://ackobackend.herokuapp.com/pay/paynow")
+              }
+            >
               Buy Now
             </button>
           </div>
