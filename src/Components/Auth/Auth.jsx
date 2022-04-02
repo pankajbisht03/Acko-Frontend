@@ -1,7 +1,35 @@
 import "./Auth.css";
 import Header from "../header/Header";
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 export default function Auth() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [first, setfirst] = useState(true);
+  const logIn = async () => {
+    setfirst(false);
+    try {
+      let res = axios.post("api/email", { email: inputValue });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const logInOtp = async () => {
+    try {
+      let res = axios.post("api/otp", { email: inputValue });
+      dispatch({ type: "userDetails", payload: res.data });
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  let inputValue;
+  function inputHandler(e) {
+    inputValue = e.target.value;
+  }
   return (
     <>
       <Header />
@@ -151,35 +179,46 @@ export default function Auth() {
         <div className="input-container">
           <div className="input-group mb-3">
             <input
-              type="text"
+              type={first ? "text" : "number"}
               className="form-control"
-              placeholder="email"
+              placeholder={first ? "Email" : "Otp"}
               aria-label="email"
               aria-describedby="basic-addon1"
               id="big-input"
+              onChange={inputHandler}
             />
           </div>
-          <div
-            className="alert alert-success d-flex align-items-center"
-            role="alert"
-          >
-            <svg
-              className="bi flex-shrink-0 me-2"
-              width={24}
-              height={24}
-              role="img"
-              aria-label="Success:"
+          {first == false && (
+            <div
+              className="alert alert-success d-flex align-items-center"
+              role="alert"
             >
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-            </svg>
-            <div>Otp has been sent to your email</div>
-          </div>
+              <svg
+                className="bi flex-shrink-0 me-2"
+                width={24}
+                height={24}
+                role="img"
+                aria-label="Success:"
+              >
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg>
+              <div>Otp has been sent to your email</div>
+            </div>
+          )}
         </div>
         <div className="checkbox-container">
           <input type="checkbox" id="agree" name="agree" value="bike" />
           <label htmlFor="agree">Recieve important updates on Whatsapp</label>
         </div>
-        <button className="btn btn-outline-success button-grey">Get OTP</button>
+        <button
+          className="btn btn-outline-success button-grey"
+          onClick={() => {
+            if (first) logIn();
+            else logInOtp();
+          }}
+        >
+          {first ? "Get OTP" : "Login"}
+        </button>
       </div>
     </>
   );

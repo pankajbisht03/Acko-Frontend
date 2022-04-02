@@ -5,17 +5,7 @@ import "./GetPolicy.css";
 export default function PageSeven() {
   const naviget = useNavigate();
   const [first, setfirst] = useState({ stage: 0 });
-  useEffect(async () => {
-    try {
-      let res = await axios.get("api");
-      res = res.data;
-      setfirst(res);
-      console.log(first);
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-  useEffect(async () => {
+  const forUpdate = async () => {
     try {
       let res = await axios.put("api", first);
       res = res.data;
@@ -23,6 +13,9 @@ export default function PageSeven() {
     } catch (error) {
       console.log(error);
     }
+  };
+  useEffect(() => {
+    forUpdate;
     if (first.stage == 5) {
       naviget("/Payment");
     }

@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./Navbar.css";
 export default function Navbar() {
@@ -11,7 +12,9 @@ export default function Navbar() {
     mMenu: false,
     logPart: false,
   });
-  const [userLog, setuserLog] = useState(true);
+  const userLog = useSelector((store) => store);
+  const dispatch = useDispatch();
+
   return (
     <header>
       <nav
@@ -428,6 +431,7 @@ export default function Navbar() {
                           alignItems: "center",
                           justifyContent: "space-between",
                         }}
+                        onClick={() => dispatch({ type: "userLogout" })}
                       >
                         <p className="textPuserLog" style={{ paddingLeft: 0 }}>
                           Logout
