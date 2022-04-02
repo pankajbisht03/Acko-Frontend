@@ -1,26 +1,40 @@
 import "./Auth.css";
 import Header from "../header/Header";
-import axios from "axios";
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import axios from "axios";
 
 export default function Auth() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [first, setfirst] = useState(true);
+  const [sec, setSec] = useState("");
   const logIn = async () => {
     setfirst(false);
+    setSec(inputValue);
     try {
-      let res = axios.post("api/email", { email: inputValue });
+      const res = await axios.post("https://ackobackend.herokuapp.com/email", {
+        email: inputValue,
+      });
+      const Data = await res.data;
+      console.log(Data);
     } catch (error) {
       console.log(error);
     }
   };
   const logInOtp = async () => {
     try {
-      let res = axios.post("api/otp", { email: inputValue });
-      dispatch({ type: "userDetails", payload: res.data });
+      const res = await axios.post("https://ackobackend.herokuapp.com/otp", {
+        email: sec,
+        otp: inputValue,
+      });
+      const Data = await res.data;
+
+      console.log(Data);
+      dispatch({ type: "userDetails", payload: true });
+      localStorage.setItem("token", Data.token);
       navigate("/");
     } catch (error) {
       console.log(error);

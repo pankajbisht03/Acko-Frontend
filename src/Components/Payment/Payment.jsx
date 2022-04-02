@@ -7,6 +7,17 @@ import {
 import "./Payment.css";
 
 export default function Pricing() {
+  const logIn = async () => {
+    try {
+      const res = await axios.post("https://ackobackend.herokuapp.com/paynow", {
+        email: inputValue,
+      });
+      const Data = await res.data;
+      console.log(Data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
       <Header />
@@ -71,7 +82,9 @@ export default function Pricing() {
           <div></div>
           <div className="price">
             <p className="amount">₹3,221 + GST</p>
-            <button className="buyBtn ">Buy Now</button>
+            <button className="buyBtn " onClick={() => logIn}>
+              Buy Now
+            </button>
           </div>
           <div className="lastEmi">
             <span className="emi">EMI</span> <span>starting from ₹184</span>{" "}
