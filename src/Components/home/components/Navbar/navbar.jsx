@@ -22,7 +22,7 @@ export default function Navbar() {
         aria-label="Fourth navbar example"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" onClick={() => naviget("/")}>
             <svg
               width={63}
               height={20}
@@ -362,8 +362,14 @@ export default function Navbar() {
                   </li>
                 </ul>
               )}
-              <a className="Inbtn" onClick={() => naviget("/login")}>
-                login
+              <a
+                className="Inbtn"
+                onClick={() => {
+                  if (userLog) naviget("/myPolicy");
+                  else naviget("/login");
+                }}
+              >
+                {userLog ? "manage policy" : "Login"}
               </a>
             </div>
             <a style={{ margin: "0px 10px 0px 0px" }}>Help</a>
@@ -872,9 +878,12 @@ export default function Navbar() {
               <p className="mManuManageP">Manage your policy</p>
               <button
                 className="loginBtnMmenu"
-                onClick={() => naviget("/login")}
+                onClick={() => {
+                  if (userLog) naviget("/myPolicy");
+                  else naviget("/login");
+                }}
               >
-                Login
+                {userLog ? "manage policy" : "Login"}
               </button>
             </div>
             <div className="lowwerMmenu">

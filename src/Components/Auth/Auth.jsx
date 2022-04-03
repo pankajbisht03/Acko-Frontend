@@ -10,6 +10,7 @@ export default function Auth() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [first, setfirst] = useState(true);
+  const [message, setMsg] = useState(false);
   const [sec, setSec] = useState("");
   const logIn = async () => {
     setfirst(false);
@@ -19,7 +20,7 @@ export default function Auth() {
         email: inputValue,
       });
       const Data = await res.data;
-      console.log(Data);
+      setMsg(Data.message);
     } catch (error) {
       console.log(error);
     }
@@ -31,11 +32,12 @@ export default function Auth() {
         otp: inputValue,
       });
       const Data = await res.data;
-
-      console.log(Data);
-      dispatch({ type: "userDetails", payload: true });
-      localStorage.setItem("token", Data.token);
-      navigate("/");
+      setMsg(Data.message);
+      if (Data.message == "signin success") {
+        dispatch({ type: "userDetails", payload: true });
+        localStorage.setItem("token", Data.token);
+        navigate("/");
+      }
     } catch (error) {
       console.log(error);
     }
@@ -202,7 +204,7 @@ export default function Auth() {
               onChange={inputHandler}
             />
           </div>
-          {first == false && (
+          {message && (
             <div
               className="alert alert-success d-flex align-items-center"
               role="alert"
@@ -216,7 +218,7 @@ export default function Auth() {
               >
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
               </svg>
-              <div>Otp has been sent to your email</div>
+              <div>{message}</div>
             </div>
           )}
         </div>
