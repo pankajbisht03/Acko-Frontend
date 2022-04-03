@@ -1,5 +1,4 @@
 const initial = false;
-import { useNavigate } from "react-router-dom";
 
 export default (state = initial, { type, payload }) => {
   console.log(state);

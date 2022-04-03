@@ -8,7 +8,7 @@ import { useEffect } from "react";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    let token = localStorage.getItem("token");
+    let token = localStorage.getItem("token") || "false";
     if (token != "false") {
       dispatch({ type: "userDetails", payload: true });
     }
